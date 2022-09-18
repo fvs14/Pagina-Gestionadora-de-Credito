@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Credito,CostaRica">
+    <title>SScreditS-PreAprobar</title>
+    <link rel="icon" type="image" href="Assets/faviconC.jpg"/>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="EmpleadosCSS.css"/>
+</head>
+<body>
+    
+    <nav class="nav_empleado" >
+        <ul> 
+            <header><img id="icono" class="clase" src="Assets/logo3.png" alt="icono imagen"></header>
+            <li><a href="Empleados-Inicio.html" > Inicio</a></li>
+            <li><a  href="#" > Pre-Aprobar Credito</a></li>
+            <li><a  href="AprobarCredito.html" > Aprobar Credito</a></li>
+            <li><a  href="#" > Gestionar Datos</a></li>
+            
+            <li><a  href="Index.html" > Salir</a></li>
+            <a id="fecha"><span id='date-time'></span></a>
+         </ul>
+    </nav>
+
+    <section class="main-section">
+        <div >
+            <form>	
+                <h3 >Buscar Cliente </h3>
+                <div class="row">
+                    
+                    <div class="form-group col-sm-7">
+                        <label for="">Cédula</label>
+                        <input type="text"class="form-control" name="nom_form" id="idnum" placeholder="#####"required />
+                    </div>
+                    <button type="button" class="btn btn-primary ml-5 mt-4 col-sm-2 mb-4" id="insert">Buscar</button>	
+                        
+                </div>
+            </form>
+            <form>	
+                <h3 id="Pre-AprobacinId">Ingresar Cliente</h3>
+                
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label for="">Nombre </label>
+                        <input type="text"class="form-control" name="nom_form" id="nom" placeholder="Nombre"required />
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for=""> Primer Apellido </label>
+                        <input type="text"class="form-control" name="nom_form" id="ape1" placeholder="Apellido"required />
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="">Segundo Apellido </label>
+                        <input type="text"class="form-control" name="nom_form" id="ape2" placeholder="Apellido"required />
+                    </div>	
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-7">
+                        <label for="">Cédula</label>
+                        <input type="text"class="form-control" name="nom_form" id="idnum" placeholder="#####"required />
+                    </div>	
+                    <div class="form-group col-sm-5">
+                          
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Identificación</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Cédula</option>
+                                <option>Dimex</option>
+                            </select>
+                        </div>
+                    </div>  
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="">Teléfono</label>
+                        <input type="text"class="form-control" name="nom_form" id="tel" placeholder="888888"required />
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="">Correo Electrónico</label>
+                        <input type="text"class="form-control" name="nom_form" id="correo" placeholder="ejemplo@dominio.com"required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-sm-12">
+                        <label for="exampleFormControlTextarea1">Dirección</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                    </div>
+                </div>
+                    <button type="button" class="btn btn-primary mt-4" id="insert">Ingresar</button>
+                    <button type="submit" class="btn btn-primary ml-4 mt-4">Limpiar</button> 
+            </form>
+            
+            <form>
+                <h3 id="Pre-AprobacinId">PreAprobar</h3>
+                <div class="row">
+                    <div class="form-group col-sm-12">
+                        <label for="" id='date-time2'>Fecha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="">Monto</label>
+                        <input type="text"class="form-control" name="nom_form" id="tel" placeholder="0.000.000.00"required />
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="exampleFormControlSelect1">Tipo de Cuota</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>X Cuotas</option>
+                            <option>XX Cuotas</option>
+                        </select>
+                    </div>
+                </div>				
+                <button type="button" class="btn btn-primary mt-4" id="insert">PreAprobar Crédito</button>
+                
+            </form>
+           
+        </div>
+    
+       
+        
+    </section>
+
+    
+    <footer>
+        
+        <div> 
+            <p class="Pfotter">COPYRIGHT © 2021 </p>
+        </div> 
+    </footer>
+    <script>
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML=dt;
+        document.getElementById('date-time2').innerHTML=dt;
+   
+
+    </script> 
+    
+   
+   
+</body>
+</html>

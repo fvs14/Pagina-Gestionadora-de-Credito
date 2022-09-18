@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Credito,CostaRica">
+    <title>SSCreditS Page</title>
+    <link rel="icon" type="image" href="Assets/faviconC.jpg"/>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="IndexCSS.css"/>
+</head>
+<body>
+    
+    <nav >
+        <ul class="menu"> 
+            <li><header><img id="icono" class="clase" src="Assets/logo3.png" alt="icono imagen"></header></li>
+            <li><a href="#" > Inicio </a></li>
+            <li><a  href="#Pre-AprobacinId" > Pre-Aprobación </a></li>
+            <li><a  href="#ContactoId" > Contacto </a></li>
+            
+            <li class="dropdown">
+                <a class ="idioma" href="Empleados-Inicio.html" >Iniciar Sesión</a>
+            </li>
+            
+         </ul>
+    </nav>
+   
+    <div class="slider_div"></div>
+        <div class="slider">
+            <div><img src="Assets/slide1.jpg"></div>
+            <div><img src="Assets/slide2.jpg"></div>
+            
+        </div>
+    </div>
+
+    <h3>¿Quiénes somos?</h3>
+    <section class="main-section">
+        
+        <div class="caja">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur similique voluptas provident aliquid facere libero a nisi ut non? Perspiciatis ad molestiae consequuntur libero placeat ipsum, natus eaque expedita!</p>
+        </div>
+          
+        <div class="SliderBox">
+            <div class="slider2">
+                <div><img src="Assets/01.jpg"></div>
+                <div><img src="Assets/02.jpg"></div>
+                <div><img src="Assets/03.jpg"></div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <div class="div-btn-preguntas">
+       
+        <button class="show-more">Mostrar Preguntas Frecuentes</button>
+    </div>
+    <div id="content">
+        <h3 id="parrafo-preguntas">En esta sección puede encontrar algunas preguntas frecuentes.</h3>
+        <section class="main-section">
+            
+            <h3>1. ¿A qué edad puedo solicitar un crédito?</h3>
+            <div class="caja">
+                <p>Toda persona a partir de los 18 años de edad es elegible
+                </p>
+            </div>
+
+        </section>
+        <section class="main-section">
+            <h3>2. ¿Cuál es el monto mínimo y máximo por el préstamo?</h3>
+            <div class="caja">
+                <p>Puede optar por un préstamo por un monto mínimo de ₡XX.000. 
+                    En cuanto al monto máximo no hay un límite prestablecido. Este se define a través de la capacidad de pago con la que cuente cada persona.
+                </p>
+            </div>
+
+        </section>
+        <section class="main-section">
+            <h3>3. ¿Qué documentos debo mostrar para solicitar un préstamo?</h3>
+            <div class="caja">
+                <p>Cédula de Identidad:
+                    La cédula debe de ser legible y estar vigente
+                    X meses en trabajo fijo:
+                    Todo solicitante debe tener al menos X meses laborando para la misma empresa.
+                </p>
+            </div>
+
+        </section>
+        <section class="main-section">
+            <h3>4. ¿Qué pasa si soy un extranjero?</h3>
+            <div class="caja">
+                <p>Todo extranjero debe de mostrar su Dimex vigente.
+                </p>
+            </div>
+
+        </section>
+        <section class="main-section">
+            <h3>5. ¿Cuáles son los plazos que ofrecen para pagar un crédito?</h3>
+            <div class="caja">
+                <p>Le ofrecemos dos tipos de cuotas para que puedas realizar los pagos.
+                    X meses:
+                    Por todo crédito menor a ₡X.000 colones, se utiliza el plazo a X meses con cuota fija.
+                    X meses:
+                    Por todo crédito mayor a ₡X.000 colones, se utiliza el plazo a X meses con cuota fija.
+                </p>
+            </div>
+
+        </section>
+        <section class="main-section">
+            <h3>6. ¿Que datos debo dar para obtener un crédito?</h3>
+            <div class="caja">
+                <p>Solo necesitas los siguientes datos para optar por un crédito.
+                </p>
+                
+                    <li>Nombre completo del cliente.</li>
+                    <li>Número de cédula.</li>
+                    <li>Fecha de nacimiento.</li>
+                    <li>Dirección domicilio (Provincia, Cantón y Distrito).</li>
+                    <li>Lugar de trabajo y fecha de ingreso.</li>
+                    <li> Números de teléfono casa, celular y trabajo.</li>
+                    <li> Firma por cliente.</li>
+                    <li>Firma por el Gestor de Negocios.</li>
+                </p>
+            </div>
+
+        </section>
+    
+    </div>
+
+    <div >
+        <form>	
+            <h3 id="Pre-AprobacinId">Solicite su crédito</h3>
+            <div class="form-group">
+                <label for="">Nombre Completo</label>
+                <input type="text"class="form-control" name="nom_form" placeholder="Nombre"required />
+            </div>	
+            <div class="form-group">
+                <label for="">Cédula</label>
+                <input type="text"class="form-control" name="nom_form" placeholder="#####"required />
+            </div>	
+            <div class="form-group">
+                <label for="">Apellidos</label>
+                <input type="text"class="form-control" name="nom_form" placeholder="Apellidos"required />
+            </div>
+            <div class="form-group">
+                <label for="">Teléfono</label>
+                <input type="text"class="form-control" name="nom_form" placeholder="888888"required />
+            </div>
+            <div class="form-group">
+                <label for="">Correo Electrónico</label>
+                <input type="text"class="form-control" name="nom_form" placeholder="ejemplo@dominio.com"required />
+            </div>				
+            <button type="button" class="btn btn-primary mt-4">Limpiar</button>
+            <button type="submit" class="btn btn-primary ml-4 mt-4">Solicitar</button>
+        </form>
+       
+    </div>
+    
+    <footer>
+        
+        <div id="row-footer-id" class="row" >
+            <div class="col-sm-4">
+                <h4 id="ContactoId">Contactenos:</h4>
+                <p class="Pfotter">Telefono :XXXXX</p>
+                <p class="Pfotter"> Correo :XXXX@gmail.com</p>
+            </div>
+        
+            <div class="col-sm-4">
+                <h4 >Horarios:</h4>
+                <p class="Pfotter">Lunes a Viernes de Xam a Xpm</p>
+                <p class="Pfotter">Sábados de Xam a Xpm</p>
+            </div>
+
+            <div class="col-sm-4">
+                <h4 >Redes:</h4>
+                <p class="Pfotter">Facebook :</p>
+                <p class="Pfotter">XXXXX</p>
+                
+                
+            </div>
+        </div>
+        
+        <div> 
+            <p class="Pfotter">COPYRIGHT © 2021</p>
+        </div> 
+    </footer>
+
+    <script src="JS-Slider.js" ></script>
+    <script src="JS-Slider2.js" ></script>
+    <script src="hide-content.js" ></script>
+    <script src="nav-change-color.js" ></script>
+    
+</body>
+</html>
